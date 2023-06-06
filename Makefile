@@ -17,3 +17,6 @@ lint:
 
 preview:
 	$(NODE_BIN)/vite preview
+
+format:
+	$(NODE_BIN)/prettier --write .
