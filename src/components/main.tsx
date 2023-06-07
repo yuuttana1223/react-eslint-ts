@@ -2,7 +2,13 @@ import { App } from "@components/App";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+const container = document.getElementById("root");
+
+if (!container) {
+  throw new Error("No root element found.");
+}
+
+ReactDOM.createRoot(container).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
