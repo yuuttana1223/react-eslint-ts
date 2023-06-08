@@ -13,6 +13,9 @@ module.exports = {
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
+  settings: {
+    react: { version: "detect" },
+  },
   plugins: ["import"],
   rules: {
     "react/display-name": "error",
@@ -30,15 +33,6 @@ module.exports = {
     "react/function-component-definition": [
       "warn",
       { namedComponents: "arrow-function" },
-    ],
-    "react/jsx-handler-names": [
-      "error",
-      {
-        eventHandlerPrefix: "handle",
-        eventHandlerPropPrefix: "on",
-        checkLocalVariables: false,
-        checkInlineFunction: true,
-      },
     ],
     "max-nested-callbacks": ["warn", 4],
     "max-depth": ["warn", 4],
