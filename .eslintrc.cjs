@@ -58,5 +58,11 @@ module.exports = {
       },
     ],
     "import/no-duplicates": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        patterns: ["./*", "../**/*"],
+      },
+    ],
   },
 };
