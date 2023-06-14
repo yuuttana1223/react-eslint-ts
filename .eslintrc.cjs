@@ -27,7 +27,7 @@ module.exports = {
     "no-lonely-if": "error",
     "require-await": "warn",
     "no-return-await": "error",
-    "@typescript-eslint/explicit-function-return-type": "warn",
+    // "@typescript-eslint/explicit-function-return-type": "warn",
     "prefer-arrow-callback": "error",
     "arrow-body-style": ["error", "always"],
     "react/function-component-definition": [
