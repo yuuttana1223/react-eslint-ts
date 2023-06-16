@@ -19,7 +19,7 @@ module.exports = {
   plugins: ["import"],
   rules: {
     "react/display-name": "error",
-    "no-unused-vars": "error",
+    "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "no-console": "error",
     eqeqeq: "error",
